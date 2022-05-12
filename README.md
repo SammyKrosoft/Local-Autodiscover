@@ -4,7 +4,7 @@ Outlook 2016 and later will use the below framework to get to the Autodiscover i
 
 ![image](https://user-images.githubusercontent.com/33433229/168157464-ff037022-c85e-4341-b089-3effe8ab605a.png)
 
-You can find the above procedure on the below link:
+You can find the above steps detailed on the below link:
 https://support.microsoft.com/en-us/topic/outlook-2016-implementation-of-autodiscover-0d7b2709-958a-7249-1c87-434d257b9087
 
 --------------------------------------------------------------------------------------------------------------------------------------------
