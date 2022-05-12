@@ -38,6 +38,9 @@ For example, to provide a user with a *contoso.ca* SMTP domain (aka an e-mail ad
 |Outlook 2019|	16.0|
 |Microsoft 365|	16.0|
 
+Sources:
+
+[MSOutlook.info](https://www.msoutlook.info/question/200)
 
 ```
 Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\xx.x\Outlook\AutoDiscover
