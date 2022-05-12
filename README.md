@@ -49,7 +49,7 @@ Key type: REG_SZ
 Value:    C:\Autodiscover\autodiscover.xml
 ```
 
-In the above example, the XML settings file is located here: *C:\Autodiscover\autodiscover.xml*, and it is for *contoso.ca* as it's the registry key name.
+In the above example, the XML settings file is located here: ```C:\Autodiscover\autodiscover.xml```, and it is for ```contoso.ca``` domain as it's the registry key name.
 
 ## Create the autodiscover.xml file (text file)
 
