@@ -21,7 +21,22 @@ First, we must tell Outlook to prefer a local XML file before attempting SCP loo
 
 Second, you will need to specify to which SMTP domain you want to configure a local Autodiscover.xml file, and also specify the path to the local Autodiscover.xml file you want to use for users with that SMTP domain => that way, for the other Outlook profiles for users with other SMTP addresses, Outlook will not use that local Autodiscover.XML file but it will either look for another registry key with the domain name, or continue its process to locate autodiscover via SCP, or DNS or Office 365. To be able to achieve that, the new registry key's name is the SMTP domain you want the local Autodiscover.xml instructions to be applied to.
 
-For example, to provide a user with a *contoso.ca* SMTP domain (aka an e-mail address of type UserName@contoso.ca) settings from a specific local autodiscover.xml file located inside the ```c:\autodiscover\``` folder, you could configure the following registry value. Replace xx.x with the value corresponding to your Outlook version:
+For example, to provide a user with a *contoso.ca* SMTP domain (aka an e-mail address of type UserName@contoso.ca) settings from a specific local autodiscover.xml file located inside the ```c:\autodiscover\``` folder, you could configure the following registry value. Replace ```xx.x``` with the value corresponding to your Outlook version:
+
+|Version Name|Version Number|
+|---|---|
+|Outlook 97|	8.0|
+|Outlook 98|	8.5|
+|Outlook 2000|	9.0|
+|Outlook XP/2002|	10.0|
+|Outlook 2003|	11.0|
+|Outlook 2007|	12.0|
+|Outlook 2010|	14.0|
+|Outlook 2013|	15.0|
+|Outlook 2016|	16.0|
+|Outlook 2019|	16.0|
+|Microsoft 365|	16.0|
+
 
 ```
 Key: HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\xx.x\Outlook\AutoDiscover
