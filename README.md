@@ -14,11 +14,11 @@ For a user with an SMTP e-mail address with a specific @contoso.ca SMTP domain, 
 - either direct it to another Autodiscover URL (put "redirectURL" information inside the file) 
 - or to simply give Outlook specific URL to go to for the MAPI HTTP, RPC HTTP, IMAP and/or POP settings (put MAPIHTTP, RPCHTTP, IMAP and/or POP information inside the file)
 
-## Tell Outlook to look for a Local XML file first (Registry Key)
+## Step 1 of 3 - Tell Outlook to look for a Local XML file first (Registry Key)
 
 First, we must tell Outlook to prefer a local XML file before attempting SCP lookup or HTTPS root domain or even a DNS lookup for an autodiscover.contoso.ca URL. To do that we just have to add the ```PreferLocalXML``` 
 
-## Specify which domain will use which autodiscover.xml file path (Registry Key)
+## Step 2 of 3 - Specify which domain will use which autodiscover.xml file path (Registry Key)
 
 Second, you will need to specify to which SMTP domain you want to configure a local Autodiscover.xml file, and also specify the path to the local Autodiscover.xml file you want to use for users with that SMTP domain => that way, for the other Outlook profiles for users with other SMTP addresses, Outlook will not use that local Autodiscover.XML file but it will either look for another registry key with the domain name, or continue its process to locate autodiscover via SCP, or DNS or Office 365. To be able to achieve that, the new registry key's name is the SMTP domain you want the local Autodiscover.xml instructions to be applied to.
 
@@ -51,7 +51,7 @@ Value:    C:\Autodiscover\autodiscover.xml
 
 In the above example, the XML settings file is located here: ```C:\Autodiscover\autodiscover.xml```, and it is for ```contoso.ca``` domain as it's the registry key name.
 
-## Create the autodiscover.xml file (text file)
+## Step 3 of 3 - Create the autodiscover.xml file (text file)
 
 And third, you will need to create an Autodiscover.xml file on the path specified on the above registry key, for example C:\Autodiscover\autodiscover.xml
 
