@@ -70,4 +70,6 @@ Content of Autodiscover.xml for autodiscover URL redirection: on the below examp
 </Autodiscover>
 ```
 
+> **Note** : the above and the below source are referenced for Outlook 2010 but is still valid for all other Outlook versions (2016+)
+
 Source: [Plan to automatically configure user accounts in Outlook 2010](https://docs.microsoft.com/en-us/previous-versions/office/office-2010/cc511507(v=office.14)?redirectedfrom=MSDN)
